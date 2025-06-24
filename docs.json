@@ -18,7 +18,21 @@
             "pages": [
               "index",
               "quickstart",
-              "featurelimit"
+              "featurelimits"
+            ]
+          },
+          {
+            "group": "Using TestGenAI",
+            "pages": [
+              "using-testgenai/CreatingNewProject",
+              "using-testgenai/CreatingTestCases",
+              "using-testgenai/UpdateWithChanges",
+              "using-testgenai/UpdateTestCase",
+              "using-testgenai/Timeline",
+              "using-testgenai/Translate",
+              "using-testgenai/RebuildChecklist",
+              "using-testgenai/CloneChecklist",
+              "using-testgenai/Export"
             ]
           },
           {
