@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "TestGenAI.com Documentation",
   "colors": {
-    "primary": "#E292B8",
-    "light": "#E292B8",
-    "dark": "#E292B8"
+    "primary": "#2E92B8",
+    "light": "#2E92B8",
+    "dark": "#2E92B8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
