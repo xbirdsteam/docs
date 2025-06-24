@@ -25,6 +25,7 @@
             "group": "Using TestGenAI",
             "pages": [
               "using-testgenai/CreatingaNewProject",
+              "using-testgenai/CreatingModules",
               "using-testgenai/CreatingTestCases",
               "using-testgenai/UpdateWithChanges",
               "using-testgenai/UpdateTestCase",
