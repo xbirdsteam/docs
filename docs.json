@@ -24,7 +24,7 @@
           {
             "group": "Using TestGenAI",
             "pages": [
-              "using-testgenai/CreatingNewProject",
+              "using-testgenai/CreatingaNewProject",
               "using-testgenai/CreatingTestCases",
               "using-testgenai/UpdateWithChanges",
               "using-testgenai/UpdateTestCase",
@@ -36,14 +36,13 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Plan and Points",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "plan-and-points/plan-overview",
+              "plan-and-points/how-points-work",
+              "plan-and-points/upgrade-downgrade",
+              "plan-and-points/buying-more-points",
+              "plan-and-points/payment-methods"
             ]
           }
         ]
