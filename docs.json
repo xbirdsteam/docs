@@ -65,8 +65,8 @@
     }
   },
   "logo": {
-    "light": "/logo/testgenai-light.svg",
-    "dark": "/logo/testgenai-light.svg"
+    "light": "/logo/testgenai-logo.svg",
+    "dark": "/logo/testgenai-logo.svg"
   },
   "navbar": {
     "links": [
