@@ -11,14 +11,13 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
@@ -38,19 +37,29 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Roadmap",
+          "href": "https://testgenai.com/roadmap",
+          "icon": "signs-post"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Changelog",
+          "href": "https://testgenai.com/changelog",
+          "icon": "font-awesome"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Telegram Group",
+          "href": "https://t.me/testgenai",
+          "icon": "telegram"
+        },
+        {
+          "anchor": "Zalo Group",
+          "href": "https://zalo.me/g/rueduf094",
+          "icon": "comments"
+        },
+        {
+          "anchor": "FAQs",
+          "href": "https://testgenai.com/faqs",
+          "icon": "file-circle-question" 
         }
       ]
     }
