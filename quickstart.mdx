@@ -4,7 +4,7 @@ description: "Start building structured test cases from business requirements in
 icon: "rocket"
 ---
 
-Follow these four simple steps:
+Follow these five simple steps:
 
 ## 1. Sign Up & Sign In
 
@@ -24,88 +24,77 @@ Follow these four simple steps:
   <Card title="Create Project" icon="folder-open" href="/using-testgenai/CreatingaNewProject">
     Create a project to manage features & test cases
   </Card>
-  <Card title="Modules" icon="wand-magic-sparkles" href="/using-testgenai/CreatingModules">
-    Create test cases from requirements and UI images
-  </Card>
-  <Card title="Add Images" icon="image" href="/essentials/images">
-    Add images to your docs to make them more engaging.
-  </Card>
-  <Card title="Add Custom Components" icon="puzzle-piece" href="/essentials/reusable-snippets">
-    Add templates to your docs to make them more reusable.
+  <Card title="Modules" icon="folder" href="/using-testgenai/CreatingModules">
+    Create the folder to manage epic or multiple features.
   </Card>
 </CardGroup>
 
 ## 3. Generate Test Cases with AI
 
-<CardGroup cols={2}>
-  <Card title="Create Project" icon="folder-open" href="/using-testgenai/CreatingaNewProject">
-    Create a project to manage features & test cases
-  </Card>
-  <Card title="Create Test Cases" icon="wand-magic-sparkles" href="/using-testgenai/CreatingTestCases">
+- Click the **Create TCs** button.
+- TestGenAI will analyze your input and automatically generate structured **checklist**, covering all main scenarios and edge cases. Then you can expand it to **Test cases** by clicking the **Generate All TCs** button
+
+<CardGroup cols={1}>
+  <Card title="Create Test cases" icon="wand-magic-sparkles" href="/using-testgenai/CreatingTestCases">
     Create test cases from requirements and UI images
-  </Card>
-  <Card title="Add Images" icon="image" href="/essentials/images">
-    Add images to your docs to make them more engaging.
-  </Card>
-  <Card title="Add Custom Components" icon="puzzle-piece" href="/essentials/reusable-snippets">
-    Add templates to your docs to make them more reusable.
   </Card>
 </CardGroup>
 
-- Start a new project then select **Create Test Cases**.
-- Enter your **feature requirements**, **user stories**, or **business requirements** into the input box.
-- Optionally, upload documents (PDF, png, jpge, txt etc.) containing your requirements.
+## 4.  Review and Update TCs
 
-<AccordionGroup>
-  <Accordion title="Clone your docs locally" icon="github">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion title="Preview changes" icon="rectangle-terminal">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally.
+- Review the generated test cases directly in the UI.
+- Edit, customize, or add comments if needed.
+- Request to update checklist by clicking the **Update with changes** button
+- Request to update testcase by comment on testcase
 
-    1. Install the
-       [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-       documentation changes locally with this command: `npm i -g mintlify`
-    2. Run the following command at the root of your documentation (where
-       `docs.json` is): `mintlify dev`
+<CardGroup cols={2}>
+  <Card title="Update With Changes" icon="file-pen" href="/using-testgenai/UpdateWithChanges">
+    Edit, add comments then updating checklist following comments.
+  </Card>
+  <Card title="Update Testcase" icon="sliders" href="/using-testgenai/UpdateTestCase">
+    Add images to your docs to make them more engaging.
+  </Card>
+  <Card title="Rebuild Checklist" icon="repeat" href="/using-testgenai/RebuildChecklist">
+    Creates a  new checklist based on original requirements, ignoring current checklist
+  </Card>
+  <Card title="Clone Checklist" icon="copy" href="/using-testgenai/CloneChecklist">
+    Remove all test cases, keep the checklists, and create a new version
+  </Card>
+  <Card title="Translate" icon="language" href="/using-testgenai/Translate">
+    Creates a new checklist version with all items translated to selected language
+  </Card>
+</CardGroup>
 
-    <Note>
-      If you’re currently using the legacy `mint.json` configuration file, please update the Mintlify CLI:
+## 5. Export
 
-      `npm i -g mintlify@latest`
-      And run the new upgrade command in your docs repository:
+- Select testcases to export or export all testcase
+- Select fields want to export & arrange their orders
+- Click **Export** to download your test cases in formats like Excel, CSV, or JSON.
 
-      `mintlify upgrade`
-      You should now be using the new `docs.json` configuration file. Feel free to delete the `mint.json` file from your repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+<CardGroup cols={1}>
+  <Card title="Export" icon="file-arrow-down" href="/using-testgenai/Export">
+    Export the selected test cases with selected fields and their orders
+  </Card>
+</CardGroup>
 
-### Deploy your changes
+## What’s Next?
 
-<AccordionGroup>
-  <Accordion title="Install our Github app" icon="message-bot">
-    Our Github app automatically deploys your changes to your docs site, so you
-    don't need to manage deployments yourself. You can find the link to install on
-    your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-    successfully installed, there should be a check mark next to the commit hash
-    of the repo.
-  </Accordion>
-  <Accordion title="Push your changes" icon="rocket">
-    [Commit and push your changes to
-    Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-    for your changes to update in your docs site. If you push and don't see that
-    the Github app successfully deployed your changes, you can also manually
-    update your docs through our [dashboard](https://dashboard.mintlify.com).
-  </Accordion>
-</AccordionGroup>
+Learn more about plans and points to choose the right subscription or buy extra points.
 
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+<CardGroup cols={2}>
+  <Card title="Plan Overview" icon="comment-dollar" href="/plan-and-points/plan-overview">
+    Export the selected test cases with selected fields and their orders
+  </Card>
+  <Card title="How Points Work" icon="lightbulb" href="/plan-and-points/how-points-work">
+    Learn how the TestGenAI's points works and manage them
+  </Card>
+  <Card title="Upgrade and Downgrade" icon="crown" href="/plan-and-points/upgrade-downgrade">
+    Leanr how to upgrade and downgrade your plan
+  </Card>
+  <Card title="Buying More Points" icon="square-plus" href="/plan-and-pointsbuying-more-points">
+    Learn how to buy more points and the conditions to buy more points
+  </Card>
+  <Card title="Payment Methods" icon="credit-card" href="/plan-and-points/payment-methods">
+    Learn about the supported payment methods
+  </Card>
+</CardGroup>
