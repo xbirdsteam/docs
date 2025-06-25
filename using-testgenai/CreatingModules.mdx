@@ -1,5 +1,179 @@
 ---
 title: "Modules"
-description: "Coming soon"
+description: "Modules help you organize related features into logical groups—similar to epics in Agile or categories in a large project. This makes project management clearer and easier, especially for teams with many features."
 icon: "folder"
 ---
+
+## 1. What is a Module?
+
+- A **module** is a way to group related features together.
+- Each module can represent a business flow, an epic, or a category.
+- **Example:**
+  - The `Authentication` module contains features like login, signup, and forgot password.
+  - The `Lead` module contains features for lead management.
+
+## 2. Viewing and Managing Modules
+
+**To access module management:**
+
+<img
+  src="/images/filter_module01.png"
+  alt="Filter Module01 Pn"
+  title="Filter Module01 Pn"
+  style={{ width:"37%" }}
+/>
+
+1. In your project’s sidebar, click the **three dots** icon next to the feature search bar.
+2. Select **Manage modules** from the dropdown.
+
+![Project Modules Pn](/images/project_modules.png)
+
+You will see the list of all modules in your project. You can view the features belong the modules.
+
+## 3. Adding a New Module
+
+1. In the project screen, go to the **Modules** tab.
+2. Click the **\+ Add Module** button.
+3. The **Add New Module** dialog will appear:
+
+<img
+  src="/images/add_new_module.png"
+  alt="Add New Module Pn"
+  title="Add New Module Pn"
+  style={{ width:"69%" }}
+/>
+
+- **Module Name** (required):\
+  Enter a descriptive name for the module (for example: `Authentication`).
+- **Description** (optional):\
+  Optionally describe the module’s purpose and scope.
+- **Add Features to Module (Optional):**\
+  Use the search box to find features and select the ones you want to include in this module.\
+  You can leave this empty and add features later.
+
+4. Click **Save Module** to create the module.
+
+## 4. Adding Features to a Module
+
+You can add features to a module from two locations:
+
+### 4.1. From the Features Tab in Project Details
+
+1. Go to the **Features** tab of your project.
+2. Click the **three dots** next to the feature you want to add.
+3. Select **Add to Module**.
+4. A popup will appear. Select one or more modules and click **Add to x module(s)**.
+
+<img
+  src="/images/Add-to-module-1.png"
+  alt="Add To Module 1 Pn"
+  title="Add To Module 1 Pn"
+  style={{ width:"88%" }}
+/>
+
+### 4.2. From the Sidebar
+
+1. In the sidebar, click the **three dots** next to the feature.
+2. Select **Add to Module**.
+3. A popup will appear. Select one or more modules and click **Add to x module(s)**.
+
+<img
+  src="/images/add-to-module-2.png"
+  alt="Add To Module 2 Pn"
+  title="Add To Module 2 Pn"
+  style={{ width:"71%" }}
+/>
+
+<img
+  src="/images/Add-to-module-3.png"
+  alt="Add To Module 3 Pn"
+  title="Add To Module 3 Pn"
+  style={{ width:"73%" }}
+/>
+
+## 5. Removing a Feature from Module
+
+1. In the project screen, go to the **Modules** tab.
+2. Click the **three dots** on the feature you want to remove.
+3. Select **Remove from Module** from the dropdown menu.
+
+<img
+  src="/images/remove-from-module.png"
+  alt="Remove From Module Pn"
+  title="Remove From Module Pn"
+  style={{ width:"80%" }}
+/>
+
+The feature will be removed from the selected module, but will remain available in your project and can still belong to other modules.
+
+## 6. Editing a Module
+
+1. In the modules list, click the **three dots** next to the module you want to edit.
+2. Select **Rename module** (or **Edit module**).
+3. The **Edit Module** dialog will appear:
+
+![Rename Module Pn](/images/rename-module.png)
+
+- Edit the module name and/or description as needed.
+- Click **Update Module** to save your changes.
+
+<img
+  src="/images/edit-module.png"
+  alt="Edit Module Pn"
+  title="Edit Module Pn"
+  style={{ width:"80%" }}
+/>
+
+## 6. Deleting a Module
+
+1. In the modules list, click the **three dots** next to the module you want to delete.
+2. Select **Delete module**.
+3. A confirmation dialog will appear:
+
+<img
+  src="/images/delete-module.png"
+  alt="Delete Module Pn"
+  title="Delete Module Pn"
+  style={{ width:"60%" }}
+/>
+
+- Click **Confirm** to permanently delete the module.
+- Click **Cancel** to abort.
+
+> **Note:** Deleting a module does **not** delete the features inside it. The features will remain in your project.
+
+<Info>
+  **Tips:**
+
+  - A feature can belong to multiple modules.
+  - Use modules to organize your project by business flows, epics, or main categories.
+  - You can edit, add, or delete modules at any time.
+</Info>
+
+## 7. Filtering Features by Module
+
+You can easily filter the feature list in your project by module, allowing you to focus on just the features relevant to specific business flows, epics, or categories.
+
+### 7.1. How to Filter by Module
+
+1. In your project sidebar, click the **three dots** icon next to the feature search bar.
+2. Under **Filter by modules**, you’ll see a list of all modules in the project.
+
+<img
+  src="/images/filter-by-modules.png"
+  alt="Filter By Modules Pn"
+  title="Filter By Modules Pn"
+  style={{ width:"64%" }}
+/>
+
+### 7.2. Filtering Behavior
+
+- **No modules selected:**\
+  All features in the project are displayed.
+- **One module selected:**\
+  Only features that belong to the selected module are shown.
+- **Multiple modules selected:**\
+  All features that belong to any of the selected modules are shown together.
+
+You can check or uncheck modules at any time to refine your view.\
+This makes it easy to focus on specific areas of your project, such as only seeing features for “Authentication” or for both “Authentication” and “Lead” at once.
