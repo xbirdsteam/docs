@@ -1,5 +1,144 @@
 ---
 title: "Create Test Cases"
-description: "Coming soon"
+description: "Creating test cases with TestGenAI is the most important step to ensure your product is well-tested and high quality. The platform leverages AI to help you quickly generate, review, and manage comprehensive, detailed test cases from just your requirements."
 icon: "wand-magic-sparkles"
 ---
+
+## Steps to Create Test Cases
+
+### 1. Prepare Your Project
+
+Make sure you have already created a project and configured your test case preferences (test case types, desired detail level, etc.).
+
+<CardGroup cols={2}>
+  <Card title="Create project" icon="folder-open" href="/using-testgenai/CreatingaNewProject">
+    Create a project to manage features & test cases
+  </Card>
+  <Card title="Modules" icon="folder" href="/using-testgenai/CreatingModules">
+    Create the folder to manage epic or multiple features
+  </Card>
+</CardGroup>
+
+### 2. Open the Test Case Generator
+
+- In the sidebar, click **\+ New Test Cases** to open the test case creation screen.
+
+### 3. Input Feature Requirements
+
+You can enter your requirements in various formats:
+
+- **Text input:**\
+  Paste or type use cases, user stories, business rules, user flows, etc.
+- **File upload:**\
+  Upload up to 10 files (.pdf, .txt, images, etc.) to provide specifications, wireframes, or screenshots.
+
+![Create Tcs Pn](/images/create-tcs.png)
+
+### 4. Click "Create TCs"
+
+- Optionally, select the language for your test cases if prompted.
+- Click the **Create TCs** button to let AI process your requirements and propose test scenarios.
+
+### 5. Review the Checklist
+
+- AI will generate a **checklist** of all potential test cases (test scenarios) based on your requirements.
+- The checklist is grouped by categories, sub-category and priorities (Critical, High, Medium, Low).
+
+### 6. Refine the Checklist (Optional)
+
+- You can **comment, add, remove, or adjust** any checklist item.
+- Once done, click **Update with changes** to re-sync the checklist with your adjustments.
+
+<Card title="Update With Changes" icon="file-pen" href="/using-testgenai/UpdateWithChanges">
+  Edit, add comments then updating checklist following comments.
+</Card>
+
+### 7. Generate Test Cases
+
+You have flexible options for generating test cases:
+
+- **Generate All TCs:** Create test cases for every checklist item at once.
+- **Generate TCs** by category or sub-category.
+- **Generate TC** for a single checklist item.
+
+![Generate All Tcs Pn](/images/generate-all-tcs.png)
+
+#### Test Case Settings Popup
+
+On the **first** **generate action** or clicking on **Setting** icon, you’ll see a popup to configure:
+
+- **Test Case ID Prefix:** Set how your test cases are numbered (e.g. LEAD001).
+- **Test Data Example:** Optionally provide test data. This will be sent to AI with each generation or update.
+
+![Tcs Settings Jp](/images/tcs-settings.jpg)
+
+You can update these **settings** anytime. Test data will be included each time you generate or update test cases.
+
+### 8. Update Test Case
+
+You have flexible requesting to regenerat test case with comment
+
+![Update Tc Pn](/images/update-tc.png)
+
+<Card title="Update Testcase" icon="sliders" href="/using-testgenai/UpdateTestCase">
+  Comment and request to regenerate a test case
+</Card>
+
+### 9. View Test Case Generation History
+
+- You can view all history of changes: checklist creation, test case generation, additions, removals, translations, etc.
+
+<CardGroup cols={2}>
+  <Card title="Timeline" icon="timeline" href="/using-testgenai/Timeline">
+    View all history of changes
+  </Card>
+  <Card title="Versions" icon="code-branch" href="/using-testgenai/Versions">
+    View versions of testcase
+  </Card>
+</CardGroup>
+
+### 10. Table View & Filtering
+
+- Switch to **Table View** to view test cases in a grid, making it easy to search, filter, and review details.
+- Filter by priority, category, sub-category, or search by keyword.
+
+![Table View Jp](/images/table-view.jpg)
+
+### 11. Continue Generation
+
+- If not all test cases have been generated for a feature, click **Continue** to let the AI finish generating any remaining test cases.
+
+![Continue Tcs Jp](/images/continue-tcs.jpg)
+
+## Notes
+
+- You can always return to refine requirements, add new files, or update the checklist.
+- AI-generated test cases are customizable—review and adjust as needed for your team’s standards.
+- The process supports both high-level scenario generation and detailed, step-by-step test cases.
+
+<Tip>
+  **TIPS**
+
+  - The more detailed and clear your requirements, the higher the quality of generated test cases.
+  - Use images and files for complex flows or UI requirements.
+  - Leverage the Table View for bulk management and review of large test case sets.
+</Tip>
+
+---
+
+### 11. Other related features
+
+<CardGroup cols={2}>
+  <Card title="Translate Test Cases" icon="language" href="/using-testgenai/Translate">
+    Creates a new checklist version with all items translated to selected language
+  </Card>
+  <Card title="Rebuild Checklist" icon="repeat" href="/using-testgenai/RebuildChecklist">
+    Creates a new checklist based on original requirements, ignoring current checklist
+  </Card>
+  <Card title="Clone Checklist" icon="copy" href="/using-testgenai/CloneChecklist">
+    Remove all test cases, keep the checklists, and create a new version
+  </Card>
+  <Card title="Export TCs" icon="file-arrow-down" href="/using-testgenai/Export">
+    Export the selected test cases with selected fields and their orders
+  </Card>
+</CardGroup>

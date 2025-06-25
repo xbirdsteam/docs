@@ -29,6 +29,7 @@
               "using-testgenai/UpdateWithChanges",
               "using-testgenai/UpdateTestCase",
               "using-testgenai/Timeline",
+              "using-testgenai/Versions",
               "using-testgenai/Translate",
               "using-testgenai/RebuildChecklist",
               "using-testgenai/CloneChecklist",
