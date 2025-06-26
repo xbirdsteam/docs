@@ -31,8 +31,8 @@
               "using-testgenai/Timeline",
               "using-testgenai/Versions",
               "using-testgenai/Translate",
-              "using-testgenai/RebuildChecklist",
-              "using-testgenai/CloneChecklist",
+              "using-testgenai/RebuildScenarios",
+              "using-testgenai/CloneScenarios",
               "using-testgenai/Export"
             ]
           },
