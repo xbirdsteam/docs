@@ -9,7 +9,7 @@ icon: "comment-dollar"
 Subscription plans determine:
 
 - **The features you can access** (basic vs. advanced)
-- **How many points you receive or can buy**
+- **How many <Tooltip tip="">points</Tooltip> you receive or can buy**
 - **Usage limits** (e.g. upload files, points per month)
 - **Support level**
 
@@ -23,70 +23,79 @@ Subscription plans determine:
 | **Max**<br />(999K/mo)       | Individuals<br />Need about 6000 test cases per month | 2,100,000 points per month | Full AI, 10 files upload/time, full export with selected fields & orders                                                                          | Dedicated                |
 | **Enterprise**<br />(Custom) | Teams, organizations                                  | Custom                     | Full AI, 10 files upload/time, full export with custom, team management                                                                           | Training \+ Dedicated    |
 
-> **Note:** The exact features and limits may vary. Refer to the pricing or feature comparison table in your dashboard for the latest details.
+<Card title="Pricing & Plan details" icon="money-check-dollar" href="https://testgenai.com/pricing">
+  View all plans & their features / limits
+</Card>
 
----
-
-## What’s Included in Each Plan?
+## 2. What’s Included in Each Plan?
 
 ### 1. **Feature Access**
 
-- Higher plans unlock more powerful AI, advanced test management tools, integrations (e.g., Jira, Slack), and custom workflows.
+- Higher plans unlock more features
 
 ### 2. **Monthly Points Allocation**
 
 - Each plan offers a set number of points per billing cycle—used for generating, updating, and translating test scenarios/cases.
-- Unused points may expire or roll over depending on the plan.
+- Unused points may expire or roll over depending on the plan. (No point balance carried over when upgrading apply for TRIAL and STATER 
 
 ### 3. **Usage Limits**
 
-- Limits apply to the number of features, scenarios, or test cases you can create per month.
-- Some plans allow unlimited exports or higher concurrency for bulk actions.
+- Limits apply to the number of files uploading, points per month, export feature.
 
-### 4. **Collaboration & Users**
+### 4. **Support & SLAs**
 
-- Invite team members and manage permissions (available in higher plans).
-- Share features or results with stakeholders.
+- Access to support ranges from community help (Free) to dedicated & training (Enterprise).
+- Priority support and guaranteed response times are offered on PREMIUM & MAX plans.
 
-### 5. **Support & SLAs**
+## 3. How to View Your Plan
 
-- Access to support ranges from community help (Free) to dedicated account managers (Enterprise).
-- Premium support and guaranteed response times are offered on Business and Enterprise plans.
+1. **Go to your Account \> Billing section.**
+   - Click on your account & choose **Settings**
 
----
-
-## How to View or Change Your Plan
-
-1. **Go to your Account or Billing section.**
+     <img
+       src="/images/profile-view-settings.jpg"
+       alt="Profile View Settings Jp"
+       title="Profile View Settings Jp"
+       style={{ width:"47%" }}
+     />
 2. **View active plan details:**
-   - See your current plan, included points, and next billing date.
-3. **Compare available plans:**
-   - Use the comparison table to review features and limits.
-4. **Upgrade or downgrade:**
-   - Click “Change Plan” and follow the prompts.
-   - Upgrades take effect immediately, downgrades at the next billing cycle.
+   - See your current plan, included points, and expired date.
+   - You can buy more points or upgrade your plan.
 
----
+     <CardGroup cols={2}>
+       <Card title="Buy more points" icon="basket-shopping" href="/plan-and-points/buying-more-points">
+         Buy more points to your plan
+       </Card>
+       <Card title="Upgrade & Downgrade" icon="square-caret-up" href="/plan-and-points/upgrade-downgrade">
+         Upgrade your plan to get more limits
+       </Card>
+     </CardGroup>
+3. **View used points (usage events):**
+   - You can view how many points did you use for each event on TestGenAI
 
-## Plan Renewal and Expiry
+     ![Usage Events Jp](/images/usage-events.jpg)
+4. **View invoice:**
+   - You can view invoice which you paid
 
-- Plans renew automatically at the end of each billing cycle (monthly or yearly).
-- You’ll receive advance notifications about renewals, usage limits, and low point balances.
-- If your plan expires or payment fails, your account may be downgraded to a Free plan with limited access.
+     ![Invoice Jp](/images/invoice.jpg)
 
----
+## 4. Plan Renewal and Expiry
 
-## Frequently Asked Questions
+- Currently, automatic payment and renewal are not supported. You can purchase a plan for 1 month, 6 months, or 12 months. When your plan expires, you’ll need to manually purchase a new one to continue using premium features.
+- If your plan expires , your account may be downgraded to a No plan with limited access with AI.
 
-**Q: Can I switch plans at any time?**\
-A: Yes\! Upgrades are instant. Downgrades occur at the end of your current billing cycle.
+## 5. Frequently Asked Questions
 
-**Q: What happens when I run out of points?**\
-A: You can buy additional points or upgrade your plan for a higher monthly allocation.
+<AccordionGroup>
+  <Accordion title="Besides the points limit, are there any restrictions on the number of projects, features, modules, test cases, or downloads I can create?">
+    Answer: No, there are no limits on the number of projects, features, modules, test cases, or downloads you can create. The only limitation is your available points, which are consumed when using AI-powered actions such as generating Test Scenarios, Test Cases, Update with Changes, Update Test Case, Rebuild, or Clone Test Scenarios. You are free to create as many projects, modules, and downloads as you like.
+  </Accordion>
+  <Accordion title="What happens when I run out of points?">
+    Answer: You can buy additional points or upgrade your plan for a higher monthly allocation.
+  </Accordion>
+  <Accordion title="Will I lose my data if I downgrade?">
+    Answer: No, your data remains safe, but access to certain features or higher limits may be restricted.
+  </Accordion>
+</AccordionGroup>
 
-**Q: Will I lose my data if I downgrade?**\
-A: No, your data remains safe, but access to certain features or higher limits may be restricted.
-
----
-
-For more details on each plan’s features and pricing, visit the [Pricing](#) page or contact support.
+For more details on each plan’s features and pricing, visit the [Pricing](https://testgenai.com/pricing) page or [contact](https://testgenai.com/contact) support.
