@@ -23,17 +23,17 @@
           {
             "group": "Using TestGenAI",
             "pages": [
-              "using-testgenai/CreatingaNewProject",
-              "using-testgenai/CreatingModules",
-              "using-testgenai/CreatingTestCases",
-              "using-testgenai/UpdateWithChanges",
-              "using-testgenai/UpdateTestCase",
-              "using-testgenai/Timeline",
-              "using-testgenai/Versions",
-              "using-testgenai/Translate",
-              "using-testgenai/RebuildScenarios",
-              "using-testgenai/CloneScenarios",
-              "using-testgenai/Export"
+              "using-testgenai/projects",
+              "using-testgenai/modules",
+              "using-testgenai/create-testcases",
+              "using-testgenai/update-with-changes",
+              "using-testgenai/update-testcase",
+              "using-testgenai/timeline",
+              "using-testgenai/versions",
+              "using-testgenai/translate",
+              "using-testgenai/rebuild-scenarios",
+              "using-testgenai/clone-scenarios",
+              "using-testgenai/export"
             ]
           },
           {
