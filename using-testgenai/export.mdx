@@ -1,0 +1,91 @@
+---
+title: "Export"
+description: "The Export feature allows you to easily download your test scenarios or test cases in multiple formats for use in other tools, documentation, or reporting. You have full control over data selection, field order, test case IDs, and export format."
+icon: "file-arrow-down"
+---
+
+## 1. Supported Export Formats
+
+- **XLSX** (Excel)
+- **CSV**
+- **JSON**
+
+## 2. What Can Be Exported?
+
+- **Test Scenarios only** (the scenarios, without detailed test steps)
+- **Full Test Cases** (including title, pre-conditions, description, all steps, expected results, and related fields)
+
+## 3. Export Options and Customization
+
+- **Field Selection & Ordering:**\
+  Choose which fields to include in your export (e.g., Title, ID, Checklist, Priority, Category, etc.) and drag to set the column order.
+- **Test Case Selection:**
+  - In **Table View**: Select specific test cases you want to export, then click the **Export** icon.
+  - In **Card View**: Click the **Export** icon to export all, or use **Multiselect** to pick specific cases, then export only your selections.
+- **ID Configuration:**
+  - **Keep original IDs (as selected):**\
+    Exports test cases with their current IDs, even if they’re not in sequence (e.g., TC010, TC012, TC015).
+  - **Generate sequential IDs with custom prefix:**\
+    Assign new IDs to exported cases, starting from your chosen prefix and number. For example, if you select prefix "AB", start from 5 and export three cases, their IDs will be AB005, AB006, AB007 (regardless of the original IDs).
+
+    <img
+      src="/images/customize_id_export.jpg"
+      alt="Customize Id Export Jp"
+      title="Customize Id Export Jp"
+      style={{ width:"86%" }}
+    />
+- **Export Format:**\
+  Choose your file type (JSON, CSV, XLSX) at export time.
+
+## 4. How to Export
+
+### 4.1. Export from Card View
+
+1. Click the **Export** icon at the top right to export all cases.
+
+   <img
+     src="/images/export-all.jpg"
+     alt="Export All Jp"
+     title="Export All Jp"
+     style={{ width:"77%" }}
+   />
+2. Or, click **Multiselect**, select the cases you need, and then click **Export Selected**.
+
+   <img
+     src="/images/multi-select-export.jpg"
+     alt="Multi Select Export Jp"
+     title="Multi Select Export Jp"
+     style={{ width:"81%" }}
+   />
+
+### 4.2. Export from Table View
+
+1. Select the specific test cases you want to export using the checkboxes.
+2. Click the **Export Selected** button.
+
+   ![Testcase Table View Export Jp](/images/testcase-table-view-export.jpg)
+
+### Export Dialog
+
+- In the export dialog, configure:
+  - **ID Configuration**
+  - **Field Selection & Ordering** (check/uncheck fields, drag to reorder)
+  - **Export Format**
+- Click **Export Selected** to download your file.
+
+  <img
+    src="/images/export-test-cases.jpg"
+    alt="Export Test Cases Jp"
+    title="Export Test Cases Jp"
+    style={{ width:"83%" }}
+  />
+
+<Note>
+  **Tips**
+
+  - Use field selection and ordering to match your export with the target system or reporting standard.
+  - Use ID configuration to keep original traceability or to generate clean IDs for import into other tools.
+  - Export only the cases you need for efficient handoff or review.
+</Note>
+
+---
