@@ -9,9 +9,11 @@
   },
   "favicon": "/testgenai-favicon.svg",
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Documentation",
+        "dropdown": "Documentation",
+        "description": "Documentation for Seitrace",
+        "icon": "book",
         "groups": [
           {
             "group": "Get Started",
@@ -44,6 +46,19 @@
               "plan-and-points/upgrade-downgrade",
               "plan-and-points/buying-more-points",
               "plan-and-points/payment-methods"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Changelog",
+        "description": "Updates and changes",
+        "icon": "clock-rotate-left",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog/product-updates"
             ]
           }
         ]
