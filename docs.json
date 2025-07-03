@@ -72,11 +72,6 @@
           "icon": "signs-post"
         },
         {
-          "anchor": "Changelog",
-          "href": "https://testgenai.com/changelog",
-          "icon": "font-awesome"
-        },
-        {
           "anchor": "Telegram Group",
           "href": "https://t.me/testgenai",
           "icon": "telegram"
