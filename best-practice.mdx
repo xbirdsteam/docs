@@ -1,7 +1,115 @@
 ---
 title: "Best Practice"
-description: "Coming soon"
+description: "Hướng dẫn cách để bạn sử dụng TestGenAI hiệu quả. Bài viết gồm 3 phần, phần 1: Hiểu về AI để dùng cho hiệu quả, 2: Áp dụng vào TestGenAI, 3: Cấu hình nâng cao giúp bạn xây dựng test cases đúng ý hơn."
 icon: "thumbs-up"
 ---
 
-Coming soon
+## 1. Hiểu đúng về AI – Đồng nghiệp đặc biệt của bạn
+
+### 1.1. AI là ai trong dự án của bạn?
+
+Hãy tưởng tượng **AI giống như một người đồng nghiệp** mới gia nhập nhóm của bạn. Người đồng nghiệp này:
+
+- Rất thông minh, có kiến thức sâu rộng về phát triển phần mềm, đặc biệt là viết test cases.
+- Làm việc nhanh, logic, và cực kỳ chi tiết.
+
+Tuy nhiên, **AI chưa biết gì về dự án cụ thể của bạn**:
+
+- Chưa hiểu nghiệp vụ, chưa nắm rõ các luồng chức năng, chưa biết các quy tắc kinh doanh (business rules) riêng biệt của bạn.
+- Nói cách khác, AI chỉ “giỏi nghề”, nhưng “chưa thông thạo việc nhà”.
+
+### 1.2. Nhận task như thế nào?
+
+Nếu bạn giao cho một đồng nghiệp giỏi nhưng chưa hiểu dự án, họ sẽ như thế nào?
+
+- Họ sẽ đoán hoặc dựa vào kinh nghiệm để viết testcases, có thể đúng hoặc sai, có thể thiếu hoặc dư.
+- Trong thực tế, họ thường sẽ hỏi lại bạn để làm rõ yêu cầu.
+
+**Nhưng với TestGenAI, AI KHÔNG hỏi lại bạn**.\
+AI chỉ có thể dựa vào những gì bạn cung cấp ban đầu để làm việc.
+
+### 1.3. Vậy, nhiệm vụ của bạn là gì?
+
+**Bạn phải đóng vai trò là người sếp dễ thương, chịu khó để hướng dẫn cho AI**, cụ thể:
+
+- Giới thiệu **sơ về dự án**, mục tiêu, các tính năng chính.
+- Mô tả chi tiết về tính năng bạn muốn viết testcases, bao gồm luồng hoạt động, luồng người dùng, các bước, các điểm cần lưu ý, các quy tắc riêng (business rules).
+
+### 1.4. Nếu thông tin chưa đủ hoặc chưa rõ thì sao?
+
+- Giống như người đồng nghiệp, **AI sẽ cố gắng hoàn thành nhiệm vụ dựa trên những gì được cung cấp**.
+- Nếu thông tin thiếu hoặc mơ hồ, AI có thể hiểu sai, hiểu dư hoặc bị thiếu sót khi viết testcases.
+- Khi đó, bạn cần **review kết quả, comment những điểm cần điều chỉnh, bổ sung thêm thông tin để AI hiểu đúng hơn**.
+
+### 1.5. Lưu ý khi cung cấp tài liệu cho AI
+
+- **Không nên gửi cho AI cả một bộ tài liệu dài hàng chục trang** nếu chỉ cần viết testcases cho một tính năng nhỏ.
+- Nếu bạn “ném” cho AI quá nhiều thông tin, AI cũng như người thật: dễ bị quá tải, dễ sót ý quan trọng hoặc nhầm lẫn.
+- **Cách tốt nhất:**
+  - Gửi cho AI bản tóm tắt dự án (giới thiệu tổng quan, liệt kê các tính năng chính).
+  - Chia nhỏ từng tính năng để AI tập trung phân tích và viết testcases từng phần.
+  - Khi viết xong một tính năng, review lại và tiếp tục với tính năng tiếp theo.
+
+### 1.6. Vậy khi làm việc với AI ...
+
+- **AI là đồng nghiệp thông minh nhưng cần được hướng dẫn cụ thể về dự án của bạn.**
+- **Bạn càng cung cấp đủ và rõ ràng thông tin, AI càng viết testcases chính xác và sát với thực tế hơn. Không cần viết dài, cần viết đủ.**
+- **Nên chia nhỏ công việc và tài liệu để AI xử lý hiệu quả, tránh quá tải hoặc nhầm lẫn.**
+
+---
+
+## 2. Áp dụng thực tế với TestGenAI – Quy trình kết hợp AI & Con người
+
+### 2.1. Hiểu cấu trúc và luồng hoạt động
+
+**TestGenAI** không chỉ đơn giản là một công cụ AI, mà là một “**đồng nghiệp số**” luôn đồng hành cùng bạn trong quá trình tạo test cases.\
+Luồng làm việc trong TestGenAI được thiết kế để kết hợp chặt chẽ giữa **AI và yếu tố con người** (bạn hoặc người đồng nghiệp review testcases cho bạn), đảm bảo kết quả đạt chất lượng tốt nhất.
+
+### 2.2. Các bước sử dụng TestGenAI hiệu quả
+
+![Testgenai Diagram Pn](/images/testgenai-diagram.png)
+
+#### **Bước 1: Nhập thông tin dự án**
+
+- Bạn cần cung cấp cho AI thông tin tổng quan về dự án:
+  - Giới thiệu ngắn gọn dự án, mục tiêu, các tính năng chính.
+  - Mô tả chi tiết về tính năng (hoặc module) bạn muốn kiểm thử.
+  - Có thể đính kèm thêm hình ảnh giao diện, tài liệu, file liên quan để AI hiểu rõ hơn về nghiệp vụ.
+
+#### **Bước 2: AI phân tích và tạo test scenarios**
+
+- AI sẽ dựa trên thông tin bạn cung cấp để:
+  - Phân tích nghiệp vụ, luồng chức năng.
+  - Tạo ra các **test scenarios** (các kịch bản kiểm thử tổng quan).
+- **Bạn/sếp/đồng nghiệp bạn review kết quả:**
+  - Đọc kỹ các test scenarios AI tạo ra.
+  - Đánh giá xem đã bao quát và đúng với nghiệp vụ chưa.
+  - Nếu thấy thiếu, dư hoặc chưa đúng ý: **bình luận, bổ sung thông tin, yêu cầu AI điều chỉnh**.
+
+#### **Bước 3: Chốt test scenarios – Tạo test cases chi tiết**
+
+- Khi bạn đã hài lòng với các test scenarios, bạn yêu cầu AI tạo ra các **test cases chi tiết** tương ứng.
+  - Nếu tính năng cần dữ liệu kiểm thử (test data) cụ thể, bạn có thể cung cấp cho AI.
+  - Nếu không, AI sẽ tự động suy luận và đề xuất test data phù hợp.
+- **Bạn/sếp/đồng nghiệp bạn tiếp tục review:**
+  - Kiểm tra các test cases, có thể chỉnh sửa hoặc yêu cầu AI bổ sung, điều chỉnh lại tuỳ ý.
+
+#### **Bước 4: Hoàn thiện và xuất kết quả**
+
+- Khi các test cases đã đầy đủ, hợp lý:
+  - Bạn có thể xuất (export) kết quả ra các định dạng như Excel, CSV, JSON.
+
+### **Lưu ý để sử dụng TestGenAI hiệu quả:**
+
+- **Cung cấp thông tin càng chi tiết, càng sát thực tế thì kết quả AI tạo ra càng chính xác.**
+- **Luôn review kỹ kết quả AI tạo ra:** đây là bước then chốt để đảm bảo không bị thiếu sót hoặc sai lệch nghiệp vụ.
+- **Chia nhỏ tính năng để làm từng phần:** giúp AI tập trung, bạn cũng dễ quản lý và review hơn.
+- **Tận dụng khả năng điều chỉnh liên tục:** Đừng ngại yêu cầu AI sửa đổi, bổ sung, hoặc thử nhiều hướng tiếp cận khác nhau.
+
+<Tip>
+  **TestGenAI không thay thế con người, mà là người đồng hành, giúp bạn tiết kiệm thời gian, giảm sai sót và nâng cao chất lượng kiểm thử phần mềm.**
+</Tip>
+
+<Note>
+  Toàn bộ lịch sử chỉnh sửa, trao đổi, bình luận giữa bạn và AI đều được lưu lại, dễ dàng tra cứu lại khi cần.
+</Note>
