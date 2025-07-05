@@ -76,6 +76,15 @@ Luồng làm việc trong TestGenAI được thiết kế để kết hợp ch�
   - Mô tả chi tiết về tính năng (hoặc module) bạn muốn kiểm thử.
   - Có thể đính kèm thêm hình ảnh giao diện, tài liệu, file liên quan để AI hiểu rõ hơn về nghiệp vụ.
 
+<CardGroup cols={2}>
+  <Card title="Tạo dự án" icon="folder-open" href="/using-testgenai/projects">
+    Tạo dự án và kèm theo giới thiệu ngắn gọn về dự án để AI hiểu
+  </Card>
+  <Card title="Tạo Test Scenarios" icon="wand-magic-sparkles" href="/using-testgenai/create-testcases#3-input-feature-requirements">
+    Nhập thông tin về tính năng và yêu cầu AI tạo Test Scenarios
+  </Card>
+</CardGroup>
+
 #### **Bước 2: AI phân tích và tạo test scenarios**
 
 - AI sẽ dựa trên thông tin bạn cung cấp để:
@@ -86,6 +95,15 @@ Luồng làm việc trong TestGenAI được thiết kế để kết hợp ch�
   - Đánh giá xem đã bao quát và đúng với nghiệp vụ chưa.
   - Nếu thấy thiếu, dư hoặc chưa đúng ý: **bình luận, bổ sung thông tin, yêu cầu AI điều chỉnh**.
 
+<CardGroup cols={2}>
+  <Card title="Review và điều chỉnh Test Scenarios" icon="file-pen" href="/using-testgenai/update-with-changes">
+    Cách review và comment \+ yêu cầu AI cập nhật lại Test Scenarios
+  </Card>
+  <Card title="Điều chỉnh tay Test Scenarios" icon="marker">
+    Bạn có thể chủ động điều chỉnh tay các Test Scenarios mà không dùng tới AI (soon)
+  </Card>
+</CardGroup>
+
 #### **Bước 3: Chốt test scenarios – Tạo test cases chi tiết**
 
 - Khi bạn đã hài lòng với các test scenarios, bạn yêu cầu AI tạo ra các **test cases chi tiết** tương ứng.
@@ -94,10 +112,22 @@ Luồng làm việc trong TestGenAI được thiết kế để kết hợp ch�
 - **Bạn/sếp/đồng nghiệp bạn tiếp tục review:**
   - Kiểm tra các test cases, có thể chỉnh sửa hoặc yêu cầu AI bổ sung, điều chỉnh lại tuỳ ý.
 
+<CardGroup cols={2}>
+  <Card title="Điều chỉnh testcase (AI)" icon="sliders" href="/using-testgenai/update-testcase#1-how-to-update-a-test-case">
+    Bạn đưa ra yêu cầu cho AI điều chỉnh một test case
+  </Card>
+  <Card title="Điều chỉnh testcase (chỉnh tay)" icon="marker">
+    Bạn được phép chỉnh tay các test case, category, sub-category của nó
+  </Card>
+</CardGroup>
+
 #### **Bước 4: Hoàn thiện và xuất kết quả**
 
-- Khi các test cases đã đầy đủ, hợp lý:
-  - Bạn có thể xuất (export) kết quả ra các định dạng như Excel, CSV, JSON.
+- Khi các test cases đã đầy đủ, hợp lý, bạn có thể xuất (export) kết quả ra các định dạng như Excel, CSV, JSON.
+
+<Card title="Export" icon="file-arrow-down" href="/using-testgenai/export">
+  Bạn có thể chọn xuất theo chuẩn format nào: csv, xlsx, json. Hoặc có thể cấu hình IDs, sắp xếp thứ tự các trường dữ liệu, chọn trường nào để xuất file.
+</Card>
 
 ### **Lưu ý để sử dụng TestGenAI hiệu quả:**
 
@@ -113,3 +143,60 @@ Luồng làm việc trong TestGenAI được thiết kế để kết hợp ch�
 <Note>
   Toàn bộ lịch sử chỉnh sửa, trao đổi, bình luận giữa bạn và AI đều được lưu lại, dễ dàng tra cứu lại khi cần.
 </Note>
+
+## 3. Cấu hình nâng cao – Giúp bạn xây dựng test cases đúng ý hơn
+
+Để AI có thể tạo ra test cases **phù hợp với yêu cầu thực tế, phong cách và phạm vi kiểm thử của từng dự án**, bạn cần thiết lập rõ các quy định trong phần **Cấu hình nâng cao**. Đây là bước rất quan trọng, ảnh hưởng trực tiếp đến **chất lượng, phạm vi kiểm thử (test coverage)** và hiệu quả sử dụng TestGenAI.
+
+Bạn có thể tự định nghĩa các quy địn (rule) hoặc chọn từ template có sẵn:
+
+**<u>Khi mở rộng phần Advanced Settings, bạn sẽ cấu hình các thông số sau:</u>**
+
+### 3.1. **Phong cách viết và ngôn ngữ trình bày (Writing Style & Tone)**
+
+- **Quy định phong cách viết:**
+  - Viết ngắn gọn, súc tích hay chi tiết
+  - Sử dụng ngôn ngữ trang trọng, thân thiện, hay kỹ thuật?
+  - ...
+
+### 3.2. **Chiến lược test coverage (Test Coverage Strategy)**
+
+- **Chỉ định loại kiểm thử cần tạo test case:**
+  - Ví dụ: UI Testing (kiểm thử giao diện), Functional Testing (kiểm thử chức năng), Data Validation (kiểm thử dữ liệu), API Testing, Security Testing, v.v.
+  - Đối với từng loại thì test cái gì, ví dụ test về accessibility thì test những nội dung gì? WCAG, color contrast, alt text, ... Bạn liệt kê ra các phần bạn muốn test thì AI sẽ tập trung vào những phần đó.
+- **Có thể chọn từ mẫu chiến lược sẵn có hoặc tự viết mô tả riêng.**
+- \*\*Lưu ý: \*\*Quy định này **cực kỳ quan trọng**, ảnh hưởng trực tiếp đến phạm vi và độ bao phủ (coverage) của test cases.
+
+### 3.3. **Định nghĩa mức độ ưu tiên (Priority Levels)**
+
+- \*\*Thiết lập tiêu chí cho 4 mức độ ưu tiên: \*\*Vì khi tạo ra test scenarios, AI sẽ tự đưa ra luôn mức độ ưu tiên cho scenario đó.
+  - **Critical:** Test case nào được xem là cực kỳ quan trọng? (thường là kiểm thử các chức năng cốt lõi, ảnh hưởng lớn nếu lỗi)
+  - **High:** Quan trọng, nhưng không tới mức critical.
+  - **Medium:** Kiểm thử các trường hợp phổ biến, ít rủi ro hơn.
+  - **Low:** Trường hợp kiểm thử bổ sung, ít tác động nếu lỗi.
+- **Việc phân loại rõ giúp AI tự động đánh dấu priority chính xác cho từng test case.**
+
+### 3.4. **Quy tắc loại trừ (Exclusion Rules)**
+
+- **Nêu rõ những gì KHÔNG cần kiểm thử:**
+  - Chức năng, module, hoặc trường hợp nào cần bỏ qua, không sinh test case.
+  - Ví dụ: Không tạo test case cho header, menu và footer, không kiểm thử chức năng export, v.v.
+- **AI sẽ tự động bỏ qua các phần này khi sinh test cases**, giúp bạn tiết kiệm thời gian và tránh những test case không cần thiết.
+
+### 3.5. **Mức độ chi tiết của test steps (Test Steps Detail Level)**
+
+- **Quy định mức độ chi tiết mong muốn cho từng bước kiểm thử:**
+  - **Chi tiết cao:** Ghi rõ từng thao tác nhỏ, phù hợp cho tester mới hoặc kiểm thử phức tạp.
+  - **Tổng quát:** Chỉ ghi các bước lớn, dành cho tester có kinh nghiệm hoặc khi kiểm thử đơn giản.
+- **Giúp AI sinh test case với độ chi tiết đúng ý bạn, tránh bị thiếu sót hoặc dư thừa thông tin.**
+- Thường thì bạn nên chọn ở mức thấp, vì AI viết rất chi tiết, dễ bị dư.
+
+### **3.6. Tại sao phải cấu hình nâng cao?**
+
+- **Quy định càng rõ, AI càng tạo ra test cases sát thực tế, đúng nhu cầu, đúng phong cách của dự án bạn.**
+- **Giúp kiểm soát phạm vi kiểm thử, tránh bỏ sót hoặc lan man ngoài phạm vi yêu cầu.**
+- **Tiết kiệm thời gian chỉnh sửa về sau, tăng chất lượng và hiệu quả công việc.**
+
+<Card title="Cấu hình nâng cao" icon="gears" href="/using-testgenai/projects#2-project-setup-fields">
+  Nơi bạn định nghĩa rõ ràng cho AI biết bạn muốn kiểm thử cái gì, theo phong cách nào, mức độ ưu tiên ra sao, và loại trừ những trường hợp nào.
+</Card>
