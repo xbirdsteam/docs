@@ -19,7 +19,8 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart"
+              "quickstart",
+              "best-practice"
             ]
           },
           {
