@@ -39,13 +39,13 @@
             ]
           },
           {
-            "group": "Plan and Points",
+            "group": "Plan and Credits",
             "pages": [
-              "plan-and-points/plan-overview",
-              "plan-and-points/how-points-work",
-              "plan-and-points/upgrade-downgrade",
-              "plan-and-points/buying-more-points",
-              "plan-and-points/payment-methods"
+              "plan-and-credits/plan-overview",
+              "plan-and-credits/how-credits-work",
+              "plan-and-credits/upgrade-downgrade",
+              "plan-and-credits/buying-more-credits",
+              "plan-and-credits/payment-methods"
             ]
           }
         ]
