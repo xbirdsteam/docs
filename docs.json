@@ -52,14 +52,15 @@
         ]
       },
       {
-        "dropdown": "Changelog",
+        "dropdown": "Product Updates",
         "description": "Updates and changes",
         "icon": "clock-rotate-left",
         "groups": [
           {
-            "group": "Changelog",
+            "group": "Product Updates",
             "pages": [
-              "changelog/product-updates"
+              "product-updates/changelog",
+              "product-updates/roadmap"
             ]
           }
         ]
