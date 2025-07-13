@@ -34,8 +34,8 @@
               "using-testgenai/timeline",
               "using-testgenai/versions",
               "using-testgenai/translate",
-              "using-testgenai/rebuild-scenarios",
-              "using-testgenai/clone-scenarios",
+              "using-testgenai/rebuild-checklist",
+              "using-testgenai/clone-checklist",
               "using-testgenai/export"
             ]
           },
