@@ -82,33 +82,33 @@ Luồng làm việc trong TestGenAI được thiết kế để kết hợp ch�
   <Card title="Tạo dự án" icon="folder-open" href="/using-testgenai/projects">
     Tạo dự án và kèm theo giới thiệu ngắn gọn về dự án để AI hiểu
   </Card>
-  <Card title="Tạo Test Scenarios" icon="wand-magic-sparkles" href="/using-testgenai/create-testcases#3-input-feature-requirements">
-    Nhập thông tin về tính năng và yêu cầu AI tạo Test Scenarios
+  <Card title="Tạo Checklist" icon="wand-magic-sparkles" href="/using-testgenai/create-testcases#3-input-feature-requirements">
+    Nhập thông tin về tính năng và yêu cầu AI tạo Checklist
   </Card>
 </CardGroup>
 
-#### **Bước 2: AI phân tích và tạo test scenarios**
+#### **Bước 2: AI phân tích và tạo checklist**
 
 - AI sẽ dựa trên thông tin bạn cung cấp để:
   - Phân tích nghiệp vụ, luồng chức năng.
-  - Tạo ra các **test scenarios** (các kịch bản kiểm thử tổng quan).
+  - Tạo ra các **Checklist**
 - **Bạn/sếp/đồng nghiệp bạn review kết quả:**
-  - Đọc kỹ các test scenarios AI tạo ra.
+  - Đọc kỹ các checklist AI tạo ra.
   - Đánh giá xem đã bao quát và đúng với nghiệp vụ chưa.
   - Nếu thấy thiếu, dư hoặc chưa đúng ý: **bình luận, bổ sung thông tin, yêu cầu AI điều chỉnh**.
 
 <CardGroup cols={2}>
-  <Card title="Review và điều chỉnh Test Scenarios" icon="file-pen" href="/using-testgenai/update-with-changes">
-    Cách review và comment \+ yêu cầu AI cập nhật lại Test Scenarios
+  <Card title="Review và điều chỉnh Checklist" icon="file-pen" href="/using-testgenai/update-with-changes">
+    Cách review và comment \+ yêu cầu AI cập nhật lại checklist
   </Card>
-  <Card title="Điều chỉnh tay Test Scenarios" icon="marker">
-    Bạn có thể chủ động điều chỉnh tay các Test Scenarios mà không dùng tới AI (soon)
+  <Card title="Điều chỉnh tay Checklist" icon="marker">
+    Bạn có thể chủ động điều chỉnh tay các checklist mà không dùng tới AI (soon)
   </Card>
 </CardGroup>
 
-#### **Bước 3: Chốt test scenarios – Tạo test cases chi tiết**
+#### **Bước 3: Chốt checklist – Tạo test cases chi tiết**
 
-- Khi bạn đã hài lòng với các test scenarios, bạn yêu cầu AI tạo ra các **test cases chi tiết** tương ứng.
+- Khi bạn đã hài lòng với các **checklist**, bạn yêu cầu AI tạo ra các **test cases chi tiết** tương ứng.
   - Nếu tính năng cần dữ liệu kiểm thử (test data) cụ thể, bạn có thể cung cấp cho AI.
   - Nếu không, AI sẽ tự động suy luận và đề xuất test data phù hợp.
 - **Bạn/sếp/đồng nghiệp bạn tiếp tục review:**
@@ -171,7 +171,7 @@ Bạn có thể tự định nghĩa các quy địn (rule) hoặc chọn từ te
 
 ### 3.3. **Định nghĩa mức độ ưu tiên (Priority Levels)**
 
-- **Thiết lập tiêu chí cho 4 mức độ ưu tiên:** Vì khi tạo ra test scenarios, AI sẽ tự đưa ra luôn mức độ ưu tiên cho scenario đó.
+- **Thiết lập tiêu chí cho 4 mức độ ưu tiên:** Vì khi tạo ra checklist, AI sẽ tự đưa ra luôn mức độ ưu tiên cho checklist đó.
   - **Critical:** Test case nào được xem là cực kỳ quan trọng? (thường là kiểm thử các chức năng cốt lõi, ảnh hưởng lớn nếu lỗi)
   - **High:** Quan trọng, nhưng không tới mức critical.
   - **Medium:** Kiểm thử các trường hợp phổ biến, ít rủi ro hơn.
