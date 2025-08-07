@@ -12,7 +12,7 @@
     "dropdowns": [
       {
         "dropdown": "Documentation",
-        "description": "Documentation for Seitrace",
+        "description": "TestGenAI Docs",
         "icon": "book",
         "groups": [
           {
